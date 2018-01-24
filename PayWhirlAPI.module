@@ -64,7 +64,11 @@ class PayWhirlAPI extends WireData implements Module, ConfigurableModule {
         $api_secret = $this->api_secret;
 
         //init $payWhirl
-        $payWhirl = new \PayWhirl\PayWhirl($api_key, $api_secret);
+        try {
+            $payWhirl = new \PayWhirl\PayWhirl($this->api_key, $this->api_secret);
+        } catch (\Exception $e) {
+            throw new WireException(__('Could not login to PayWhirl: ') . $e->getMessage());
+        }
         return $payWhirl;
 
     }
