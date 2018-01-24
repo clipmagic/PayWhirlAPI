@@ -41,7 +41,7 @@ class PayWhirlAPI extends WireData implements Module, ConfigurableModule {
         );
     }
 
-     static public function getDefaults() {
+    static public function getDefaults() {
         return array(
             "api_key" => "",
             "api_secret" => ""
@@ -50,19 +50,12 @@ class PayWhirlAPI extends WireData implements Module, ConfigurableModule {
 
 
 
-    public function init() {
-        // $this->addStyle("custom.css");
-        // $this->addScript("custom.js");
-        // $this->addHookAfter("class::function", $this, "yourFunction");
-        require_once 'PayWhirl.php';
+    public function ___init() {
 
     }
 
     public function login() {
-    //set api credentials
-        $api_key = $this->api_key;
-        $api_secret = $this->api_secret;
-
+        require_once 'PayWhirl.php';
         //init $payWhirl
         try {
             $payWhirl = new \PayWhirl\PayWhirl($this->api_key, $this->api_secret);
@@ -81,7 +74,7 @@ class PayWhirlAPI extends WireData implements Module, ConfigurableModule {
 
     }
 
-     public function getModuleConfigInputfields(array $data) {
+    public function getModuleConfigInputfields(array $data) {
         $inputfields = new InputfieldWrapper();
 
         $defaults = self::getDefaults();
