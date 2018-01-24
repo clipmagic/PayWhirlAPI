@@ -19,7 +19,7 @@
 use PayWhirl;
 
 
-class PayWhirlAPI extends WireData implements ConfigurableModule {
+class PayWhirlAPI extends WireData implements Module, ConfigurableModule {
 
     public static function getModuleInfo() {
         return array(
