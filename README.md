@@ -29,6 +29,12 @@ use PayWhirl;
 $payWhirl = $modules->get('PayWhirlAPI')->login();
 ```
 
+To get an array of the currently logged-in user's subscriptions:
+```
+$data = array('keyword' => $user->email);
+$userSubs = $payWhirl->getSubscriptions($payWhirl->getCustomers($data)[0]->id);
+```
+
 ## Important
 At the time of creating this module, API access to PayWhirl is limited to paid PayWhirl accounts! Should you get the message "*Invalid Authorization. Your account does not have access to the PayWhirl API.*" you're probably on the free PayWhirl plan. You'll need to upgrade or complain bitterly to PayWhirl management.
 
