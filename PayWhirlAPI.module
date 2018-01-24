@@ -1,0 +1,105 @@
+<?php namespace ProcessWire;
+
+
+/**
+ * PayWhile API for ProcessWire (0.0.1)
+ * This module is a wrapper that enables you to make requests and implement web hooks with the PayWhirl API from within ProcessWire
+ *
+ * @author Clip Magic
+ *
+ * ProcessWire 3.x
+ * Copyright (C) 2011 by Ryan Cramer
+ * Licensed under GNU/GPL v2, see LICENSE.TXT
+ *
+ * http://www.processwire.com
+ * http://www.ryancramer.com
+ *
+ */
+
+use PayWhirl;
+
+
+class PayWhirlAPI extends WireData implements ConfigurableModule {
+
+    public static function getModuleInfo() {
+        return array(
+            'title' => "PayWhirl API for ProcessWire",
+            'version' => "0.0.1",
+            'summary' => "This module is a wrapper that enables you to make requests and implement web hooks with the PayWhirl API from within ProcessWire",
+
+            'author' => "Clip Magic",
+            'href' => "https://clipmagic.com.au",
+
+            'permission' => array(""),
+            'autoload' => false,
+            'singular' => false,
+            'permanent' => false,
+
+            'requires' => array("PHP>=5.6.0", "ProcessWire>=3.0", ""),
+            'installs' => array(""),
+
+        );
+    }
+
+     static public function getDefaults() {
+        return array(
+            "api_key" => "",
+            "api_secret" => ""
+        );
+    }
+
+
+
+    public function init() {
+        // $this->addStyle("custom.css");
+        // $this->addScript("custom.js");
+        // $this->addHookAfter("class::function", $this, "yourFunction");
+        require_once 'PayWhirl.php';
+
+    }
+
+    public function login() {
+    //set api credentials
+        $api_key = $this->api_key;
+        $api_secret = $this->api_secret;
+
+        //init $payWhirl
+        $payWhirl = new \PayWhirl\PayWhirl($api_key, $api_secret);
+        return $payWhirl;
+
+    }
+
+    public function ___install() {
+
+    }
+
+    public function ___uninstall() {
+
+    }
+
+     public function getModuleConfigInputfields(array $data) {
+        $inputfields = new InputfieldWrapper();
+
+        $defaults = self::getDefaults();
+        $data = array_merge($defaults, $data);
+
+        $f = $this->modules->get('InputfieldText');
+        $f->name = 'api_key';
+        $f->label = 'api_key';
+        $f->required = 1;
+        $f->value = $data['api_key'];
+        $inputfields->add($f);
+
+        $f = $this->modules->get('InputfieldText');
+        $f->name = 'api_secret';
+        $f->label = 'api_secret';
+        $f->collapsed = 'collapsedPopulated';
+        $f->required = 1;
+        $f->value = $data['api_secret'];
+        $inputfields->add($f);
+
+        return $inputfields;
+
+    }
+
+}
