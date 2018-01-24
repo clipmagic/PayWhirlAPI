@@ -85,14 +85,14 @@ class PayWhirlAPI extends WireData implements Module, ConfigurableModule {
 
         $f = $this->modules->get('InputfieldText');
         $f->name = 'api_key';
-        $f->label = 'api_key';
+        $f->label = 'API key';
         $f->required = 1;
         $f->value = $data['api_key'];
         $inputfields->add($f);
 
         $f = $this->modules->get('InputfieldText');
         $f->name = 'api_secret';
-        $f->label = 'api_secret';
+        $f->label = 'API secret';
         $f->collapsed = 'collapsedPopulated';
         $f->required = 1;
         $f->value = $data['api_secret'];
