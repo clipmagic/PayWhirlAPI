@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b64d311-9c28-47d2-8dc0-19c987889360" name="Default" comment="Initial commit">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PayWhirlAPI/.idea/.name" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PayWhirlAPI/.idea/PayWhirlAPI.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PayWhirlAPI/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PayWhirlAPI/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PayWhirlAPI/PayWhirl.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../PayWhirlAPI/PayWhirlAPI.module" />
+    <list default="true" id="0b64d311-9c28-47d2-8dc0-19c987889360" name="Default" comment="Code edit">
+      <change beforePath="$PROJECT_DIR$/../PayWhirlAPI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../PayWhirlAPI/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +16,8 @@
       <file leaf-file-name="PayWhirlAPI.module" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../PayWhirlAPI/PayWhirlAPI.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -38,6 +33,7 @@
       <list>
         <option value="$PROJECT_DIR$/PayWhirlAPI.php" />
         <option value="$PROJECT_DIR$/PayWhirlAPI.module" />
+        <option value="$PROJECT_DIR$/../PayWhirlAPI/PayWhirlAPI.module" />
       </list>
     </option>
   </component>
@@ -121,18 +117,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516766029501</updated>
-      <workItem from="1516766031082" duration="3729000" />
+      <workItem from="1516766031082" duration="4538000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1516776179013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1516776179013</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Code edit">
+      <created>1516777526278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1516777526278</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3729000" />
+    <option name="totallyTimeSpent" value="4538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="123" y="156" width="2330" height="1249" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -161,7 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Code edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code edit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -178,8 +190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../PayWhirlAPI/PayWhirlAPI.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding />
         </state>
       </provider>
